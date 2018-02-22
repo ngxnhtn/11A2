@@ -166,6 +166,7 @@ if(!isset($_COOKIE['user']))
 										<h6 class="timeline-body text-center">PHP</h6>
 										<h2 class="timeline-body margin-bottom text-center">Special thanks to</h2>
 										<h6 class="timeline-body text-center">TEMPLATE <b>FOX</b> OF j2TeaM</h6>
+										<h6 class="timeline-body text-center">SƠN BÍP</h6>
 									</div>
 								</div>
 							</div>
