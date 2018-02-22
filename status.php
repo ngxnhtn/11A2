@@ -2,7 +2,8 @@
 <?php
 if(!isset($_COOKIE['user']))
 {
-	header('Location: login.php?uri=blank.php');
+	$id=$_GET['id'];
+	header('Location: login.php?uri=status.php?id='.$id);
 }
 ?>
 <html lang="en">
@@ -10,7 +11,7 @@ if(!isset($_COOKIE['user']))
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Một công cụ nhỏ để index :v">
+	<meta name="description" content="Một công cụ nhỏ để index :v">
 	<meta name="author" content="Như Tiến">
 	<meta property="og:url" content="http://a2mda.herokuapp.com" />
 	<meta property="og:type" content="article" />
@@ -116,7 +117,7 @@ if(!isset($_COOKIE['user']))
 							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
 						</a>
 					</li>
-					<li class="treeview">
+					<li class="treeview active">
 						<a href="blank.php#">
 							<i class="fa fa-map"></i> <span>GROUP</span>
 							<span class="pull-right-container">
@@ -124,7 +125,7 @@ if(!isset($_COOKIE['user']))
 							</span>
 						</a>
 						<ul class="treeview-menu">
-							<li><a href="group.php"><i class="fa fa-circle-o"></i> Xem bài đăng</a></li>
+							<li class="active"><a href="group.php"><i class="fa fa-circle-o"></i> Xem bài đăng</a></li>
 							<li><a href="post.php"><i class="fa fa-circle-o"></i> Đăng bài</a></li>
 						</ul>
 					</li>
@@ -139,6 +140,29 @@ if(!isset($_COOKIE['user']))
 			<!-- /.sidebar -->
 		</aside>
 		<div class="content-wrapper">		
+			<section class="content-header">
+				<h1>
+					GROUP POST
+
+				</h1>
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.php#"><i class="fa fa-dashboard"></i> Home</a></li>
+					<li class="breadcrumb-item">Group Post</a></li>
+				</ol>
+			</section>		
+			<section class="content">
+				<div class="row">
+					<?php 
+						include_once "function.php";
+						make_post();
+						make_comment();
+						if(isset($_POST['comment'])){
+						$comment = '['.$_COOKIE['user'].']   '.$_POST['comment'];
+						request('https://graph.facebook.com/'.$_GET['id'].'/comments?method=post&message='.urlencode($comment).'&access_token='.ACCESS_TOKEN);
+					};
+					?>
+				</div>
+			</section>
 		</div>
 	</div>
 

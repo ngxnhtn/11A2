@@ -10,8 +10,13 @@ if(!isset($_COOKIE['user']))
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
+		<meta name="description" content="Một công cụ nhỏ để index :v">
+	<meta name="author" content="Như Tiến">
+	<meta property="og:url" content="http://a2mda.herokuapp.com" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="A2 Index Tool" />
+	<meta property="og:description" content="Một công cụ nhỏ để index :v" />
+	<meta property="og:image" content="images/social.jpg" />
 	<link rel="icon" href="images/favicon.ico">
 
 	<title>11A2 Index Tool</title>
@@ -104,7 +109,24 @@ if(!isset($_COOKIE['user']))
 							</span>
 						</a>
 					</li>
-
+					<li>
+						<a href="TKB.php">
+							<i class="fa fa-calendar"></i>
+							<span>THỜI KHÓA BIỂU</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+						</a>
+					<li class="treeview">
+						<a href="blank.php#">
+							<i class="fa fa-map"></i> <span>GROUP</span>
+							<span class="pull-right-container">
+								<i class="fa fa-angle-left pull-right"></i>
+							</span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="group.php"><i class="fa fa-circle-o"></i> Xem bài đăng</a></li>
+							<li><a href="post.php"><i class="fa fa-circle-o"></i> Đăng bài</a></li>
+						</ul>
+					</li>
 				</ul>
 			</section>
 			<div class="sidebar-footer">

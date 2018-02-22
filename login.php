@@ -10,9 +10,13 @@ if(isset($_COOKIE['user']))
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="description" content="Một công cụ nhỏ để index :v">
+	<meta name="author" content="Như Tiến">
+	<meta property="og:url" content="http://a2mda.herokuapp.com" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="A2 Index Tool" />
+	<meta property="og:description" content="Một công cụ nhỏ để index :v" />
+	<meta property="og:image" content="images/social.jpg" />
 	<link rel="icon" href="./images/favicon.ico">
 
 	<title>LOGIN</title>
@@ -66,7 +70,7 @@ if(isset($_COOKIE['user']))
 				<!-- lockscreen credentials (contains the form) -->
 				<form class="lockscreen-credentials form-element margin-top-20" method="POST">
 					<div class="form-group has-feedback">
-						<input type="text" name="username" class="form-control" required="true" placeholder="Tên người dùng">
+						<input type="text" name="username" class="form-control" required="true" placeholder="Tên người dùng (Tùy chọn)">
 						<input type="password" class="form-control" placeholder="Password" name="password" required="true">
 					</div>
 					<!-- /.col -->
