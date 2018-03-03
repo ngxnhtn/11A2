@@ -238,7 +238,7 @@ throw new Error('template requires jQuery')
     this.options = options
     this.init()
   }
-
+ 
   PushMenu.prototype.init = function () {
     if (this.options.expandOnHover
       || ($('body').is(Selector.mini + Selector.layoutFixed))) {

@@ -1,0 +1,21 @@
+CACHE MANIFEST
+#3/3-8:34
+./TKB.php
+./contact.php
+./contactGV.php
+./assets/vendor_components/bootstrap/dist/css/bootstrap.css
+./assets/vendor_components/bootstrap/dist/css/bootstrap-extend.css
+./assets/vendor_components/font-awesome/css/font-awesome.css
+./assets/vendor_components/Ionicons/css/ionicons.css
+./css/master_style.css
+./css/skins/_all-skins.css
+./assets/vendor_components/font/font.css
+./assets/vendor_components/jquery/dist/jquery.js
+./assets/vendor_components/jquery-ui/jquery-ui.js
+./assets/vendor_components/popper/dist/popper.min.js
+./assets/vendor_components/bootstrap/dist/js/bootstrap.js	
+./assets/vendor_components/jquery-slimscroll/jquery.slimscroll.min.js
+./assets/vendor_components/fastclick/lib/fastclick.js
+./js/template.js
+FALLBACK:
+\ offline.html

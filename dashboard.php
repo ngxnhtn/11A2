@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <?php
+
 if(!isset($_COOKIE['user']))
 {
-	header('Location: index.php?uri=blank.php');
+	header('Location: index.php?uri=dashboard.php');
 };
-
 ?>
 <html manifest="cache.appcache">
 <?php include_once "header.php" ?>
@@ -27,13 +27,11 @@ if(!isset($_COOKIE['user']))
 			</nav>
 		</header>
 		<aside class="main-sidebar">
-			<!-- sidebar: style can be found in sidebar.less -->
 			<section class="sidebar">
-				<!-- Sidebar user panel -->      
-				<!-- sidebar menu: : style can be found in sidebar.less -->
+
 				<ul class="sidebar-menu" data-widget="tree">        
 					<li class="header">Menu</li>
-					<li>
+					<li class="active">
 						<a href="dashboard.php">
 							<i class="fa fa-home"></i><span>TRANG CHỦ</span>
 							<span class="pull-right-container">
@@ -53,13 +51,11 @@ if(!isset($_COOKIE['user']))
 							<li><a href="contactGV.php"><i class="fa fa-circle-o"></i>Giáo viên</a></li>
 						</ul>
 					</li>
-					<li>
-						<a href="TKB.php">
-							<i class="fa fa-calendar"></i>
-							<span>THỜI KHÓA BIỂU</span>
-							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-						</a>
-					</li>
+					<li><a href="TKB.php">
+						<i class="fa fa-calendar"></i>
+						<span>THỜI KHÓA BIỂU</span>
+						<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+					</a></li>
 					<li class="treeview">
 						<a href="#">
 							<i class="fa fa-map"></i> <span>GROUP</span>
@@ -72,6 +68,7 @@ if(!isset($_COOKIE['user']))
 							<li><a href="post.php"><i class="fa fa-circle-o"></i> Đăng bài</a></li>
 						</ul>
 					</li>
+
 				</ul>
 			</section>
 			<div class="sidebar-footer">
@@ -82,9 +79,28 @@ if(!isset($_COOKIE['user']))
 			</div>
 			<!-- /.sidebar -->
 		</aside>
-		<div class="content-wrapper">		
+		<div class="content-wrapper">
+			<section class="content-header">
+				<h1>TRANG CHỦ</h1>
+			</section>
+			<section class="content">
+				<div class="row">
+					<div class="col">
+						<div class="info-box bg-red">
+							<span class="info-box-icon push-bottom bg-red">
+								<img src="images/user.jpg" alt="user" class="rounded-circle">
+							</span>
+							<div class="info-box-content">
+								<span class="info-box-text"><h1>WELCOME !</h1></span>
+								<span class="info-box-text"><h3><?php echo $_COOKIE['user'] ?></h3></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 	</div>
+
 	<script src="assets/vendor_components/jquery/dist/jquery.js"></script>
 	
 	<!-- jQuery UI 1.11.4 -->
@@ -103,6 +119,7 @@ if(!isset($_COOKIE['user']))
 	<script src="./assets/vendor_components/fastclick/lib/fastclick.js"></script>
 
 	<script src="js/template.js"></script>
+
 </body>
 
 </html>

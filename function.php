@@ -65,7 +65,7 @@ function make_card() {
 		$time = $status['created_time'];
 		$time = strtotime($time);
 		$time = $time +3600*7;
-		$time_fixed = date("y-m-d, h:i:s", $time);
+		$time_fixed = date("y-m-d, h:i:s A", $time);
 		$likes_count = $status['likes']['count'];
 		$content = $status['message'];
 		$attachment =$status['attachments'];
@@ -158,7 +158,7 @@ function make_post(){
 		$time = $data['created_time'];
 		$time = strtotime($time);
 		$time = $time +3600*7;
-		$time_fixed = date("y-m-d, h:i:s", $time);
+		$time_fixed = date("y-m-d, h:i:s A", $time);
 		$likes_count = $data['likes']['count'];
 		$content = $data['message'];
 		$attachment =$data['attachments'];
@@ -247,7 +247,7 @@ function make_comment(){
 		$time = $comment['created_time'];
 		$time = strtotime($time);
 		$time = $time +3600*7;
-		$time_fixed = date("y-m-d, h:i:s", $time);
+		$time_fixed = date("y-m-d, h:i:s A", $time);
 		
 
 		if(array_search($id, $black)===false){
@@ -275,11 +275,11 @@ function make_comment(){
 					$time = $comment['created_time'];
 					$time = strtotime($time);
 					$time = $time +3600*7;
-					$time_fixed = date("y-m-d, h:i:s", $time);
+					$time_fixed = date("y-m-d, h:i:s A", $time);
 
 					echo '<div class="box-comment">';
 
-					echo '<img src="" alt="" class="rounded img-sm">';
+					echo '<img src="images/null.jpg" alt="" class="rounded img-sm">';
 					echo '<img src="https://graph.facebook.com/'.$user_id.'/picture" alt="User-ava" class="rounded img-sm">';
 					echo '<div class="comment-text">';
 					echo '<div class="comment-text">
