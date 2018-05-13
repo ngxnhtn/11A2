@@ -50,7 +50,7 @@ if(isset($_COOKIE['user']))
 			if(isset($_POST['btn-submit'])){
 				if ($_POST['password'] === '20162019'){
 					echo '<div class="text-center bg-green">correct</div>';
-					setcookie('user', $_POST['username'], time() + 3600*24);
+					setcookie('user', $_POST['username'], time() + 3600*24*30);
 					if(!isset($_GET['uri'])){
 						header('Location: dashboard.php');
 					} else header('Location: '.$_GET['uri']);
