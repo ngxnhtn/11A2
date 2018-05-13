@@ -129,7 +129,7 @@ if(!isset($_COOKIE['user']))
 												<td><?php echo $tkb[11]->nodes[0]->_[4]; ?></td>
 												<td><?php echo $tkb[12]->nodes[0]->_[4]; ?></td>
 												<td><?php echo $tkb[13]->nodes[0]->_[4]; ?></td>
-												<td>Sinh học</td>
+												<td></td>
 											</tr>
 											<tr>
 												<td><?php echo $tkb[15]->nodes[0]->_[4]; ?></td>
@@ -195,12 +195,12 @@ if(!isset($_COOKIE['user']))
 										<tbody>
 											<tr>
 												<td></td>
-												<td>Hóa Học</td>
 												<td></td>
 												<td></td>
-												<td>Toán</td>
-												<td>Vật Lý</td>
-												<td>Tiếng Anh</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
 											</tr>
 										</tbody>
 									</table>
