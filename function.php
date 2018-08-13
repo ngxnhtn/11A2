@@ -75,9 +75,9 @@ function make_card() {
 		
 
 
-		echo '"<div class="col-12">
+		echo '<div class="col-12">
 		<div class="box box-widget">
-		<div class="box-header with-border">"';
+		<div class="box-header with-border">';
 		if (!is_null($story)) {
 			echo '<p><b>'.$story.'</b></p>
 			</div>
