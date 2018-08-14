@@ -100,7 +100,7 @@ if(!isset($_COOKIE['user']))
 										<?php
 										include_once "function.php";
 										include_once "simple_html_dom.php";
-										$html = request('http://c3myduca.edu.vn/TKB/tkb_class_2_0.html');
+										$html = request('http://c3myduca.edu.vn/TKB/tkb_class_10_0.html');
 										$html = str_get_html($html);
 										$tkb = $html->find('font');
 										echo 'Thời khóa biểu lớp: 11A2 - Buổi sáng'
